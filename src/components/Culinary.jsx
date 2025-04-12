@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 
-const About = () => {
+const Culinary = () => {
   const { t } = useTranslation();
   return (
     <div
-      id="about"
+      id="culinary"
       className="w-full h-full lg:h-screen flex md:flex-row-reverse flex-col-reverse p-3"
     >
       <div className="relative w-full">
@@ -32,31 +32,28 @@ const About = () => {
         <div className="w-full h-full flex flex-col justify-center items-center gap-1 text-center shadow-md rounded-lg lg:p-20 p-8">
           <h1 className="text-[20px] leading-[36px]  font-azahra uppercase text-primary mb-5">
             <TypeAnimation
-              sequence={[t("about.title"), 2000]}
+              sequence={[t("culinary.title"), 2000]}
               wrapper="b"
               speed={10}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[16px] leading-[34px] font-light px-0 2xl:px-12 ">
-            {t("about.content_1")}
+            {t("culinary.content_1")}
           </p>
           <p className="text-[16px] leading-[34px] font-light px-0 2xl:px-12 ">
-            {t("about.content_2")}
+            {t("culinary.content_2")}
           </p>
-          <p className="text-[16px] leading-[34px] font-light px-0 2xl:px-12 ">
-            {t("about.content_3")}
-          </p>
-          <Link
+          {/*<Link
             href="https://www.sevenrooms.com/explore/lesalamamarrakech/reservations/create/search/"
             className="mt-4 py-2 px-8 uppercase tracking-widest border border-primary text-primary rounded-lg text-[12px] leading-[34px] hover:bg-primary hover:text-white duration-200 transition-all ease-out font-azahra"
           >
             {t("about.button_book")}
-          </Link>
+          </Link>*/}
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Culinary;
