@@ -34,7 +34,7 @@ const Gallery = () => {
       <Link href="/gallery" className="cursor-pointer p-3 rounded-md">
         <div className="flex h-full w-full justify-center items-center  relative md:hidden">
           <Image
-            src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-V2/fnezjj5w3bb716kn09y9"
+            src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/oe6ohbt2vhngxspxedro"
             alt="casa lalla tekerkoust gallery"
             width={600}
             height={700}

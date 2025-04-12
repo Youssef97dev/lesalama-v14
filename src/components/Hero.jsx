@@ -10,6 +10,14 @@ const images = [
   "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/Salama/s9ddjvzdlmsosy5zywop",
 ];
 
+const mobileImages = [
+  "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/djuzzpod3sphnjbzbm4a",
+  "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/g6rzpp98zct8gcxlsexv",
+  "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/aqahxx69j3zioo0uwvrq",
+  "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/olx3popyo3msqjowhbl5",
+  "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/usuix6tsgjhreciq8pcf",
+];
+
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,16 +31,23 @@ const Hero = () => {
 
   return (
     <div id="hero" className="relative w-full h-full lg:h-screen">
-      <div className="w-full h-full px-3 py-3 block lg:hidden">
-        <video
-          className="object-cover h-[90vh] w-full  rounded-md"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="/hero/hero-2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="h-[94vh] w-full px-3 py-3 block lg:hidden">
+        {mobileImages.map((src, index) => (
+          <div
+            key={index}
+            className={`absolute   rounded-md inset-0 transition-opacity duration-1000 m-3  ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={src}
+              alt={`Image ${index + 1}`}
+              layout="fill"
+              objectFit="cover"
+              className="object-cover w-full h-full rounded-md"
+            />
+          </div>
+        ))}
       </div>
       <div className="w-full h-full px-3 py-3 hidden lg:block">
         {images.map((src, index) => (

@@ -20,7 +20,7 @@ const Events = () => {
           className="object-cover w-full h-full rounded-md md:block hidden"
         />
         <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-V2/ypw98v2x57uxrawqaucu"
+          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/im5ycq2zloqc6krnb0aj"
           alt="le salama events small"
           height={1000}
           width={1000}

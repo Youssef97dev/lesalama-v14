@@ -8,6 +8,7 @@ import Gallery from "./Gallery";
 import About from "./About";
 import Events from "./Events";
 import Contact from "./Contact";
+import Culinary from "./Culinary";
 
 const Loader = () => {
   const [isClient, setIsClient] = useState(false);
@@ -25,6 +26,7 @@ const Loader = () => {
           <Gallery />
           <About />
           <Events />
+          <Culinary />
           <Contact />
           <Footer />
           <div className="fixed bottom-5 left-0 w-full block lg:hidden z-10">

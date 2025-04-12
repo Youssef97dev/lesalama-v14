@@ -20,7 +20,7 @@ const Culinary = () => {
           className="object-cover w-full h-full rounded-md md:block hidden"
         />
         <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-V2/f9p7bzwtaraxmovgqyeh"
+          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/salama-vnor/ryaqmmhrlgjsjw25ouyu"
           alt="Le salama about small"
           height={1000}
           width={1000}
